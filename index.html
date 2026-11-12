@@ -1,11 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
-<html lang="es">
+<html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content='width=device-width, initial-scale=1, viewport-fit=cover' name='viewport'/>
 <title>Atheria: Automatizaciones y Procesos</title>
-<meta name="description" content="Atheria automatiza procesos empresariales con inteligencia artificial, agentes de IA y flujos inteligentes para aumentar la productividad de tu empresa.">
-<style>
+<b:include data='blog' name='all-head-content'/>
+<b:skin><![CDATA[
 /* ====== EDITA AQUÍ: colores y rutas de imágenes/videos ====== */
 :root{
   --bg:#0b0d17; --bg2:#12152a; --card:#171a33; --text:#eef0fa; --muted:#a3a8c7;
@@ -99,9 +99,11 @@ footer{background:#080a12;border-top:1px solid var(--line);padding:56px 0 28px;t
 .fcols{display:flex;gap:56px;justify-content:center;margin:24px 0;flex-wrap:wrap}
 .fcols b{display:block;color:var(--accent2);font-size:.8rem;letter-spacing:.14em;margin-bottom:4px}
 .copy{color:var(--muted);font-size:.8rem;margin-top:28px}
-</style>
+
+#navbar-iframe,.navbar{display:none!important}body{margin:0}.section,.widget{margin:0;padding:0}]]></b:skin>
 </head>
 <body>
+
 
 <header>
   <div class="wrap nav">
@@ -133,21 +135,21 @@ footer{background:#080a12;border-top:1px solid var(--line);padding:56px 0 28px;t
   <section>
     <div class="wrap split">
       <div>
-        <h2>MISIÓN</h2>
-        <p class="lead" style="margin-left:0">Hacer que las empresas trabajen con más inteligencia y fluidez, diseñando y operando <b>automatizaciones con IA</b> a medida que conecten herramientas, optimicen procesos y entreguen resultados medibles, sin perder la conexión humana.</p>
-        <div class="stats"><div><b>+10</b><span>Años de experiencia</span></div><div><b>2</b><span>Clientes</span></div></div>
-        <a class="btn ghost" href="#inicio">Leer más</a>
-      </div>
-      <div class="ph tall">IMAGEN — Misión</div>
-    </div>
-  </section>
-  <section class="alt">
-    <div class="wrap split">
-      <div class="ph">IMAGEN — Visión</div>
-      <div>
-        <h2>VISIÓN</h2>
-        <p class="lead" style="margin-left:0">Ser el socio global de confianza en automatización e inteligencia artificial aplicada, haciendo simple lo complejo con sistemas autónomos, seguros y escalables.</p>
-        <h2>PROPÓSITO</h2>
+    <h2>MISIÓN</h2>
+    <p class="lead" style="margin-left:0">Hacer que las empresas trabajen con más inteligencia y fluidez, diseñando y operando <b>automatizaciones con IA</b> a medida que conecten herramientas, optimicen procesos y entreguen resultados medibles, sin perder la conexión humana.</p>
+    <div class="stats"><div><b>+10</b><span>Años de experiencia</span></div><div><b>2</b><span>Clientes</span></div></div>
+    <a class="btn ghost" href="#inicio">Leer más</a>
+</div>
+<div class="ph tall" style="padding: 0; overflow: hidden;"><img src="https://imgur.com" alt="Misión" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
+</div>
+</section>
+<section class="alt">
+<div class="wrap split">
+<div class="ph" style="padding: 0; overflow: hidden;"><img src="https://imgur.com" alt="Visión" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
+<div>
+    <h2>VISIÓN</h2>
+    <p class="lead" style="margin-left:0">Ser el socio global de confianza en automatización e inteligencia artificial aplicada, haciendo simple lo complejo con sistemas autónomos, seguros y escalables.</p>
+    <h2>PROPÓSITO</h2>
         <p style="color:var(--muted)">En Atheria diseñamos sistemas de <b>automatización inteligente y agentes de IA</b> alineados a la forma real en que trabaja tu negocio. Partimos de un diagnóstico integral y construimos arquitecturas modulares que integran tu ecosistema con seguridad, trazabilidad y control. Cada solución se entrega con medición, documentación, capacitación y monitoreo continuo.</p>
       </div>
     </div>
@@ -282,9 +284,9 @@ footer{background:#080a12;border-top:1px solid var(--line);padding:56px 0 28px;t
       <h1 style="font-size:clamp(2rem,5vw,3.2rem);text-align:center;margin-bottom:30px">Contacto</h1>
       <!-- Conecta este formulario a tu servicio (Formspree, n8n webhook, etc.) cambiando action -->
       <form id="f" action="#" method="post">
-        <div class="r"><div><label>Nombre*</label><input required name="nombre"></div><div><label>Apellido*</label><input required name="apellido"></div></div>
-        <label>Email*</label><input type="email" required name="email">
-        <label>Mensaje*</label><textarea required name="mensaje"></textarea>
+        <div class="r"><div><label>Nombre*</label><input required="required" name="nombre"/></div><div><label>Apellido*</label><input required="required" name="apellido"/></div></div>
+        <label>Email*</label><input type="email" required="required" name="email"/>
+        <label>Mensaje*</label><textarea required="required" name="mensaje"></textarea>
         <button class="btn" type="submit">Enviar</button>
         <p id="ok">¡Gracias! Te responderemos pronto.</p>
       </form>
@@ -307,7 +309,10 @@ footer{background:#080a12;border-top:1px solid var(--line);padding:56px 0 28px;t
   </div>
 </footer>
 
-<script>
+
+<div style='display:none'><b:section class='main' id='main' showaddelement='no'><b:widget id='Blog1' locked='true' title='Entradas del blog' type='Blog' version='2'/></b:section></div>
+<script>//<![CDATA[
+
 (function(){
   var pages=[].slice.call(document.querySelectorAll('.page')),links=[].slice.call(document.querySelectorAll('nav a'));
   function go(id){
@@ -332,6 +337,7 @@ footer{background:#080a12;border-top:1px solid var(--line);padding:56px 0 28px;t
     e.preventDefault();document.getElementById('ok').style.display='block';this.reset();
   });
 })();
-</script>
+
+//]]></script>
 </body>
 </html>
